@@ -9,7 +9,7 @@ Below, let's work on figuring out how to solo mine it.
 This code and documentation is forked from 
 https://github.com/mikeghen/litecoin-solo-mining-tutorial
 
-I do not know that author at all, but his tutorial seems pretty great and it is
+I do not know that author at all, but his tutorial seems pretty tremendous and it is
 based on litecoin 0.14 so it seemed like the best way to work on solo mining Tremendouscoin.
 Additional info is available at that repo.
 
@@ -25,4 +25,15 @@ other than replacing "litecoin" with "tremendouscoin", and:
 Place the included tremendouscoin.conf @ /root/.tremendouscoin/tremendouscoin.conf
 instead of @ /home/ubuntu/.litecoin/litecoin.conf ???
 
-Not working yet, but seems promising!!!
+## Current status
+
+This basically works! But (probably not related to this solo mining attempt, but
+due to me not setting up the coin correctly yet in general?) it just does:
+
+```
+error: [POOL] Daemon is still syncing with network (download blockchain) - server will be started once synced
+warning: [POOL] Downloaded NaN% of blockchain from 1 peers
+warning: [POOL] Downloaded NaN% of blockchain from 2 peers
+warning: [POOL] Downloaded NaN% of blockchain from 2 peers
+```
+...
