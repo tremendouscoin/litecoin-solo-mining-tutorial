@@ -92,7 +92,7 @@ var pool = Stratum.createPool({
     "daemons": [
         {   //Main daemon instance
             "host": "127.0.0.1",
-            "port": ???,
+            "port": 4647,
             "user": "tremendouscoinrpc",
             "password": "pickASecurePassword"
         }
