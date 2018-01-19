@@ -13,17 +13,16 @@ I do not know that author at all, but his tutorial seems pretty great and it is
 based on litecoin 0.14 so it seemed like the best way to work on solo mining Tremendouscoin.
 Additional info is available at that repo.
 
-## Tremendouscoin-specific Cheat Sheet
+## My specific cheat-sheet
+(Tremendouscoin -specific / AWS Ubuntu 14.04 -specific)
 
-Get tremendouscoind up and running on an AWS server as per
+Get tremendouscoind up and running as per
 https://github.com/tremendouscoin/tremendouscoin
 
-Once that's going try running:
+Then, basically follow the patterns in https://github.com/mikeghen/litecoin-solo-mining-tutorial
+other than replacing "litecoin" with "tremendouscoin", and:
 
-```
-tremendouscoin-cli getinfo
-```
-
-...etc etc etc basically as per following the patterns in https://github.com/mikeghen/litecoin-solo-mining-tutorial
+Place the included tremendouscoin.conf @ /root/.tremendouscoin/tremendouscoin.conf
+instead of @ /home/ubuntu/.litecoin/litecoin.conf ???
 
 Not working yet, but seems promising!!!

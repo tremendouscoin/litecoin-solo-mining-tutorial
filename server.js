@@ -1,6 +1,6 @@
 var myCoin = {
-    "name": "Litecoin",
-    "symbol": "LTC",
+    "name": "Tremendouscoin",
+    "symbol": "TMNC",
     "algorithm": "scrypt",
     /* litecoin mainnet magic: http://git.io/Bi8YFw
        litecoin testnet magic: http://git.io/NXBYJA */
@@ -16,7 +16,7 @@ var pool = Stratum.createPool({
 
     "auxes": [],
 
-    "address": "LYQb5ALaKQYufQouRg5Dvig2tBBWvL3MSg", //Address to where block rewards are given
+    "address": "LaKjF9kMTpX517TuFan8AoCtrajonTRTsd", //Address to where block rewards are given
 
     /* Block rewards go to the configured pool wallet address to later be paid out to miners,
        except for a percentage that can go to, for examples, pool operator(s) as pool fees or
@@ -92,8 +92,8 @@ var pool = Stratum.createPool({
     "daemons": [
         {   //Main daemon instance
             "host": "127.0.0.1",
-            "port": 2300,
-            "user": "litecoinrpc",
+            "port": ???,
+            "user": "tremendouscoinrpc",
             "password": "pickASecurePassword"
         }
         // {   //Backup daemon instance
