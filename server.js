@@ -16,16 +16,16 @@ var pool = Stratum.createPool({
 
     "auxes": [],
 
-    "address": "LaKjF9kMTpX517TuFan8AoCtrajonTRTsd", //Address to where block rewards are given
+    "address": "LiXiRtgGo6png3g8UCxnxuxFFXqpU2F2Bb", //Address to where block rewards are given
 
     /* Block rewards go to the configured pool wallet address to later be paid out to miners,
        except for a percentage that can go to, for examples, pool operator(s) as pool fees or
        or to donations address. Addresses or hashed public keys can be used. Here is an example
        of rewards going to the main pool op, a pool co-owner, and NOMP donation. */
-    // "rewardRecipients": {
-    //     "n37vuNFkXfk15uFnGoVyHZ6PYQxppD3QqK": 1.5, //1.5% goes to pool op
+     "rewardRecipients": {
+         "LiXiRtgGo6png3g8UCxnxuxFFXqpU2F2Bb": 1.5, //1.5% goes to pool op
     //     "mirj3LtZxbSTharhtXvotqtJXUY7ki5qfx": 0.5, //0.5% goes to a pool co-owner
-    // },
+     },
 
     "blockRefreshInterval": 1000, //How often to poll RPC daemons for new blocks, in milliseconds
 
@@ -78,7 +78,7 @@ var pool = Stratum.createPool({
             }
         },
         "3256": { //Another port for your miners to connect to, this port does not use varDiff
-            "diff": 256 //The pool difficulty
+            "diff": 16 //The pool difficulty
         }
     },
 
@@ -110,13 +110,13 @@ var pool = Stratum.createPool({
        intensive than blocknotify script). It requires the additional field "peerMagic" in
        the coin config. */
     "p2p": {
-        "enabled": false,
+        "enabled": true,
 
         /* Host for daemon */
         "host": "127.0.0.1",
 
         /* Port configured for daemon (this is the actual peer port not RPC port) */
-        "port": 9333,
+        "port": 10347,
 
         /* If your coin daemon is new enough (i.e. not a shitcoin) then it will support a p2p
            feature that prevents the daemon from spamming our peer node with unnecessary
