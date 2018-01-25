@@ -48,15 +48,25 @@ except for:
     * using the host, port, user, and password settings you used from tremdendouscoin.conf above
     * using *your own* tremendouscoin address for "address" and "rewardRecipients"    
 
-## Now, on to Actually mining Tremendouscoin
+## Running your pooling server
 
-If it seems like you have success when you run
+If it seems like you have success when you run (for live testing)
 ```
 node server.js
 ```
-(as per Substep 4 of Step 3 @ https://github.com/mikeghen/litecoin-solo-mining-tutorial), then you're basically up and running!
+(as per Substep 4 of "Step 3: Creating your Stratum Server (aka Mining Pool)" @ https://github.com/mikeghen/litecoin-solo-mining-tutorial),
+ 
+...then you're basically up and running!
 
-However remember that this is just running a pooling server.
+HINT: To keep it your pooling server going forever-ish (even if you logout from your console) or until you kill it,
+you can either follow mikeghen's "Step 4: Daemonizing the Stratum Server" or more simply just do:
+```
+nohup node server.js > /dev/null &
+```
+
+## Now, Actually mining Tremendouscoin
+
+However remember the above is just running a pooling server.
 Next you will have to actually submit work to the pooling server.
 
 (HINT: If you're on my suggested AWS server you'll need to edit the Server's Security Group's
