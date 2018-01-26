@@ -1,11 +1,11 @@
 var myCoin = {
     "name": "Tremendouscoin",
-    "symbol": "TMNC",
+    "symbol": "TUSC",
     "algorithm": "scrypt",
     /* litecoin mainnet magic: http://git.io/Bi8YFw
        litecoin testnet magic: http://git.io/NXBYJA */
-     "peerMagic": "fbc0b6db",
-     "peerMagicTestnet": "fcc1b7dc"
+     "peerMagic": "cbc1d6ab",
+     "peerMagicTestnet": "aabbb1fa"
 };
 
 var Stratum = require('stratum-pool');
@@ -16,14 +16,14 @@ var pool = Stratum.createPool({
 
     "auxes": [],
 
-    "address": "LiXiRtgGo6png3g8UCxnxuxFFXqpU2F2Bb", //Address to where block rewards are given
+    "address": "TmoSHwPDWGcexmGQxMd1jd7CAu8CADQD9Z", //Address to where block rewards are given
 
     /* Block rewards go to the configured pool wallet address to later be paid out to miners,
        except for a percentage that can go to, for examples, pool operator(s) as pool fees or
        or to donations address. Addresses or hashed public keys can be used. Here is an example
        of rewards going to the main pool op, a pool co-owner, and NOMP donation. */
      "rewardRecipients": {
-         "LiXiRtgGo6png3g8UCxnxuxFFXqpU2F2Bb": 1.5, //1.5% goes to pool op
+         "TmoSHwPDWGcexmGQxMd1jd7CAu8CADQD9Z": 1.5, //1.5% goes to pool op
     //     "mirj3LtZxbSTharhtXvotqtJXUY7ki5qfx": 0.5, //0.5% goes to a pool co-owner
      },
 
@@ -94,7 +94,7 @@ var pool = Stratum.createPool({
             "host": "127.0.0.1",
             "port": 4647,
             "user": "tremendouscoinrpc",
-            "password": "pickASecurePassword"
+            "password": "fuckDJThard"
         }
         // {   //Backup daemon instance
         //     "host": "127.0.0.1",
